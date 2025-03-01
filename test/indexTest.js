@@ -1,13 +1,15 @@
-const { 
-  employee, 
-  updateEmployeeWithKeyAndValue, 
-  destructivelyUpdateEmployeeWithKeyAndValue, 
-  deleteFromEmployeeByKey, 
-  destructivelyDeleteFromEmployeeByKey 
-} = require('../index');
-require ( './helpers.js' );
 
-describe('employees', function() {
+require('./helpers.js');
+const {
+  employee,
+  updateEmployeeWithKeyAndValue,
+  destructivelyUpdateEmployeeWithKeyAndValue,
+  deleteFromEmployeeByKey,
+  destructivelyDeleteFromEmployeeByKey
+} = require('../index');
+
+
+describe('employees', function () {
   describe('updateEmployeeWithKeyAndValue(employee, key, value)', function () {
     beforeEach(function () {
       for (const key in employee) {
