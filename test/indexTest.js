@@ -1,3 +1,10 @@
+const { 
+  employee, 
+  updateEmployeeWithKeyAndValue, 
+  destructivelyUpdateEmployeeWithKeyAndValue, 
+  deleteFromEmployeeByKey, 
+  destructivelyDeleteFromEmployeeByKey 
+} = require('../index');
 require ( './helpers.js' );
 
 describe('employees', function() {
